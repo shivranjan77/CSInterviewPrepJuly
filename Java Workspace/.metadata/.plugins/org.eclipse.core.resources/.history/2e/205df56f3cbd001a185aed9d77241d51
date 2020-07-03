@@ -1,0 +1,23 @@
+package first;
+
+public class primitiveDT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//Java is not purely object oriented because primitive DataTypes are not objects.
+//We can Create objects from them using the Wrapper Classes.
+		int x = 5;
+		int y = 10;
+		int z = x + y;
+		//+ -> Operator
+		//x,y -> Operands
+		System.out.println(z);
+		byte a = 10;
+		int b = a;
+		System.out.println(b);
+//		int c = 25;
+//		byte d = c;
+//		System.out.println(d);
+	}
+
+}
