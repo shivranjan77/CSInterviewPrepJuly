@@ -1,0 +1,43 @@
+package first;
+class Car
+{
+	int year;
+	String color;
+	int maxSpeed;
+	void accelerate()
+	{
+		System.out.println("Car is Accelerating");
+	}
+	//Passing arguments to a function
+	void setMaxSpeed(int x)
+	{
+		maxSpeed = x;
+	}
+	
+}
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		ClassName ObjectName = new ClassName(); -- Syntax
+		Car polo = new Car();
+		System.out.println(polo.year);
+		System.out.println(polo.color);
+		polo.year = 2015;
+		polo.color = "White";
+		System.out.println(polo.year);
+		System.out.println(polo.color);
+		polo.accelerate();
+		
+		Car mustang = new Car();
+		System.out.println(mustang.year);
+		System.out.println(mustang.color);
+		mustang.year = 2020;
+		mustang.color = "Red";
+		mustang.accelerate();
+		System.out.println(mustang.year);
+		System.out.println(mustang.color);
+		mustang.setMaxSpeed(320);
+	}
+
+}
