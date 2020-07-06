@@ -29,6 +29,19 @@ public class primitiveDT {
 		char ch = 'a';
 		System.out.println(ch);
 		//Task - 1: Different Ways to Convert Character to int, A - 65, a- 97
+		//Increment & Decrement Operators
+		int m = 5;
+		int n = m++;
+		System.out.println("M is: "+m+", N is: "+n);
+		int p = 5;
+		int q = ++p;
+		System.out.println("P is: "+p+", Q is: "+q);
+		m= 5;
+		n=m--;
+		System.out.println("M is: "+m+", N is: "+n);
+		m=5;
+		n=--m;
+		System.out.println("M is: "+m+", N is: "+n);
 	}
 
 }
