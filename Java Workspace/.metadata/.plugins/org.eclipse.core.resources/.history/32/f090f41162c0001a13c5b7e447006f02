@@ -1,0 +1,23 @@
+package constructors;
+class Student{
+	int rollNo;
+	String name;
+	Student(int rollNo,String name)
+	{
+		this.rollNo = rollNo;
+		this.name = name;
+	}
+}
+public class StudyConstructors {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student s = new Student();//default constructor
+		s.rollno = 1;
+		s.name = "Carryminati";
+		
+		Student 
+		
+	}
+
+}

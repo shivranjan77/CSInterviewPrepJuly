@@ -1,0 +1,22 @@
+package inheritance;
+class Shape{
+	double pi = 3.14;
+	double getSquare(int r) {
+		return r*r;
+	}
+}
+class Circle{
+	double pi = 3.14;
+	void area(int r)
+	{
+		System.out.println(pi*r*r);
+	}
+}
+public class StudyInheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

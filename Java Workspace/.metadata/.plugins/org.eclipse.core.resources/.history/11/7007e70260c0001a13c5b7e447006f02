@@ -1,0 +1,32 @@
+package polymorphism;
+class Shapes{ 
+	double pi = 3.14;
+	double getSquare(int r) {
+		return r*r;
+	}
+	void calculate(int r)
+	{
+		System.out.println(pi*getSquare(r));
+	}
+	void calculate(String s)
+	{
+		System.out.println(s);
+	}
+	double calculate(int r,int h)
+	{
+		return pi*getSquare(r)*h;
+	}
+	
+}
+public class Overloaded {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Shapes s = new Shapes();
+		s.calculate(4);
+		s.calculate("Hello");
+		System.out.println(s.calculate(5, 5));
+		
+	}
+
+}

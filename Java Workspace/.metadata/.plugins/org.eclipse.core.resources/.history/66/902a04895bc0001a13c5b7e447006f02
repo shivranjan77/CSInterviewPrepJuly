@@ -1,0 +1,37 @@
+package inheritance;
+class Shape{ //Parent Class, Base Class
+	double pi = 3.14;
+	double getSquare(int r) {
+		return r*r;
+	}
+	void parentHashCode()
+	{
+		System.out.println("Parent: "+this.hashCode());
+	}
+}
+class Circle extends Shape{ //Child Class, Derived Class
+	void area(int r)
+	{
+		System.out.println(pi*getSquare(r));
+	}
+	void childHashCode()
+	{
+		System.out.println("Child: "+this.hashCode());
+		parentHashCode();
+	}
+}
+public class StudyInheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Circle c = new Circle();
+		c.area(5);
+//		System.out.println(c.hashCode());
+//		Circle c2 = new Circle();
+//		System.out.println(c2.hashCode());
+//		Circle c3 = c;
+//		System.out.println(c3.hashCode());
+		
+	}
+
+}

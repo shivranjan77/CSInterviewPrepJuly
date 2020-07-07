@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;typesofvariables.Student&apos; to &apos;MainClass&apos;&#x0D;&#x0A;- Original project: &apos;julyinterviewprep&apos;&#x0D;&#x0A;- Original element: &apos;typesofvariables.Student&apos;&#x0D;&#x0A;- Renamed element: &apos;typesofvariables.MainClass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Student&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;typesofvariables{Student.java[Student" matchStrategy="1" name="MainClass" qualified="false" references="true" similarDeclarations="false" stamp="1594128204063" textual="false" version="1.0"/>
+</session>
