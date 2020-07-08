@@ -1,0 +1,21 @@
+package keywords;
+class A
+{
+	int x = 10;
+	void fun()
+	{
+		System.out.println("Fun of A");
+	}
+}
+class B
+{
+	
+}
+public class FinalStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
