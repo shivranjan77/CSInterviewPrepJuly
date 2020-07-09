@@ -1,0 +1,23 @@
+package abstraction;
+interface M{
+	int x = 10;
+	void fun();
+}
+interface N{
+	int x = 20;
+	void fun();
+}
+class C implements M,N{
+	void fun()
+	{
+		System.out.println("Hi, I'm fun in C");
+	}
+}
+public class MultipleInheritanceStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

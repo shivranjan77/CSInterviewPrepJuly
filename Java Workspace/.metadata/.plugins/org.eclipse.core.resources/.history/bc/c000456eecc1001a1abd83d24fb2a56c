@@ -1,0 +1,18 @@
+package abstraction;
+interface A{
+	
+}
+interface B{
+	
+}
+class C implements A,B{
+	
+}
+public class MultipleInheritanceStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

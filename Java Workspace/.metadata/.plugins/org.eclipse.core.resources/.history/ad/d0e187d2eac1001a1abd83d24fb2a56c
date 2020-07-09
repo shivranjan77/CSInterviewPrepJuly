@@ -1,0 +1,29 @@
+package abstraction;
+interface Shape{
+	double pi = 3.14; //public, static, final
+	int getSquare(int r); //public and abstract
+}
+class Circle implements Shape{
+	//Overridding function must  havee higher or equal accessibility
+	public int getSquare(int r)
+	{
+		return r*r;
+	}
+	void fun()
+	{
+		System.out.println("Hey, I just implemented an interface named Shape");
+	}
+	
+}
+public class InterfaceStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Shape.pi); //Proof of Static
+		Circle c = new Circle();
+		c.getSquare(5);
+		c.fun();
+		System.out.println(c.pi);
+	}
+
+}

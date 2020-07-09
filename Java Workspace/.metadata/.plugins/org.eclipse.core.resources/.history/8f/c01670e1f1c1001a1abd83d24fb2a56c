@@ -1,0 +1,27 @@
+package encapsulation;
+class Demo{
+	private int a = 5;
+	private int b =10;
+	int getA() {
+		return this.a;
+	}
+	int getB() {
+		return this.b;
+	}
+	void setA(int a)
+	{
+		this.a = a;
+	}
+	void setB(int b)
+	{
+		this.b = b;
+	}
+}
+public class EncapStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

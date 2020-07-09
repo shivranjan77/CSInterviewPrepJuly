@@ -1,0 +1,14 @@
+package abstraction;
+interface Shape{
+	double pi = 3.14; //public, static, final
+	pi = 5;
+	void getSquare(int r);
+}
+public class InterfaceStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

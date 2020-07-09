@@ -1,0 +1,13 @@
+package abstraction;
+interface Shape{
+	double pi = 3.14; //public, static, final
+	void getSquare(int r); //public and abstract
+}
+public class InterfaceStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Shape.pi); //Proof of Static
+	}
+
+}

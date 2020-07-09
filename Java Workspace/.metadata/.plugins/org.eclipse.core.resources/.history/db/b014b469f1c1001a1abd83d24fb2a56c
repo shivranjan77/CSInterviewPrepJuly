@@ -1,0 +1,12 @@
+package encapsulation;
+class Demo{
+	
+}
+public class EncapStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
