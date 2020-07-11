@@ -1,0 +1,10 @@
+package inputFromUser;
+
+public class ScannerStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
