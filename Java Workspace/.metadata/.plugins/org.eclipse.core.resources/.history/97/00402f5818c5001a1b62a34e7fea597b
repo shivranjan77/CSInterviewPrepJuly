@@ -1,0 +1,23 @@
+package String;
+
+public class StringStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "CipherSchools";
+		String s2 = "CipherSchools";
+		String s3 = new String("CipherSchools");
+		String s4 = new String("CipherSchools");
+		System.out.println(s1);
+		System.out.println(s3);
+		System.out.println(s4);
+		System.out.println(s1==s2); //== operator checks the reference.
+		System.out.println(s2==s3);
+		System.out.println(s3==s4);
+		System.out.println(s1.equals(s2));//.equals checks value
+		System.out.println(s2.equals(s3));
+		System.out.println(s3.equals(s4));
+		
+	}
+
+}
