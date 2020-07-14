@@ -49,28 +49,8 @@ public class StringStudy {
 			System.out.print(carr[i]+" ");
 		}
 		System.out.println();
-		String blank = "";
-		System.out.println(blank.isEmpty());
-		String dict1 = "AA";
-		String dict2 = "BD";
-		//Lexicographically - According to the dictionary order
-		System.out.println(dict1.compareTo(dict2));
-		String jv = "Java";
-//		jv=jv+" Programmers";
-//		System.out.println(jv); // Concatenation
-		System.out.println(jv.concat(" Programmers"));
-		String faltu = "       Text      ";
-		System.out.println(faltu);
-		faltu = faltu.trim(); // Remove unnecessary spaces from start and end of a string.
-		System.out.println(faltu);
-		System.out.println(s1.replace('o', '*'));
-		System.out.println(sentence.replaceAll("My", "Your")); 
-		int x = 10;
-		//Other DataType to String
-//		String sx = x+"";
-		String sx = String.valueOf(x);
-		System.out.println(sx);
-		
+		System.out.println(s1.isEmpty());
+
 	}
 
 }

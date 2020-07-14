@@ -64,13 +64,6 @@ public class StringStudy {
 		faltu = faltu.trim(); // Remove unnecessary spaces from start and end of a string.
 		System.out.println(faltu);
 		System.out.println(s1.replace('o', '*'));
-		System.out.println(sentence.replaceAll("My", "Your")); 
-		int x = 10;
-		//Other DataType to String
-//		String sx = x+"";
-		String sx = String.valueOf(x);
-		System.out.println(sx);
-		
 	}
 
 }

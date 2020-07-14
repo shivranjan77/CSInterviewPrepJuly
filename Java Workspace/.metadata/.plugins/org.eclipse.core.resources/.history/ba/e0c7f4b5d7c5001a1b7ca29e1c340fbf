@@ -66,7 +66,6 @@ public class StringStudy {
 		System.out.println(s1.replace('o', '*'));
 		System.out.println(sentence.replaceAll("My", "Your")); 
 		int x = 10;
-		//Other DataType to String
 //		String sx = x+"";
 		String sx = String.valueOf(x);
 		System.out.println(sx);
