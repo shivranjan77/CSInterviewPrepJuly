@@ -1,0 +1,15 @@
+package String;
+
+public class Anagrams {
+	static boolean isAnagram(String s1,String s2)
+	{
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "LISTEN";
+		String s2 = "SILENT";
+		System.out.println(isAnagram(s1,s2));
+	}
+
+}

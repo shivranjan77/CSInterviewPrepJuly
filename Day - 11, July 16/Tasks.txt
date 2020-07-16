@@ -1,0 +1,5 @@
+H.W. 
+	A. Practice all the Class Questions
+	B. Practice String Questions from GFG 
+	C. https://practice.geeksforgeeks.org/problems/check-if-string-is-rotated-by-two-places/0
+	D. https://practice.geeksforgeeks.org/problems/anagram/0

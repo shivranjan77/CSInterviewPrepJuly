@@ -1,0 +1,15 @@
+package String;
+
+public class FreqArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char c = 'A';
+		char c2 = 'Z';
+		int x = (int)c;
+		int y = (int)c2;
+		System.out.println(x);
+		System.out.println(y);
+	}
+
+}
