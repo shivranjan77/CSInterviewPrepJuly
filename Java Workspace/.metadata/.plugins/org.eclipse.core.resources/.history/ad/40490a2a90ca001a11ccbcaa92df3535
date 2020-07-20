@@ -65,46 +65,6 @@ public class MyLL {
 		temp.next = newNode;
 		return head;
 	}
-	static Node deleteLL()
-	{
-		return null;
-	}
-	static Node deleteFromHead(Node head)
-	{
-		if(head.next == null) //Only 1 element present
-		{
-			return null;
-		}
-		head = head.next;
-		return head;
-	}
-	static void findMiddleOld(Node head)
-	{
-		Node temp = head;
-		int count = 0;
-		while(temp!=null)
-		{
-			temp = temp.next;
-			count++;
-		}
-		temp = head;
-		for(int i=0;i<count/2;i++)
-		{
-			temp = temp.next;
-		}
-		System.out.println(temp.data);
-	}
-	static void findMiddleNew(Node head)
-	{
-		Node sptr = head;
-		Node fptr = head;
-		while(fptr!=null && fptr.next!=null) //If any one null then stop
-		{
-			fptr = fptr.next.next;
-			sptr = sptr.next;
-		}
-		System.out.println(sptr.data);
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Node head = null;
@@ -124,15 +84,8 @@ public class MyLL {
 		print(head);
 		head = insertAtEnd(head,5);
 		print(head);
-		head = insertAtPos(head,6,4);// Add 6 at position 4
+		head = insertAtPos(head,6,4);
 		print(head);
-		head = insertAtPos(head,7,1);// Add 7 at position 1;
-		print(head);
-//		head = insertAtPos(head,8,10);// Add 7 at position 1; Handle this case yourself.
-//		print(head);
-		head = deleteFromHead(head);
-		print(head);
-		findMiddleNew(head);
 	}
 
 }

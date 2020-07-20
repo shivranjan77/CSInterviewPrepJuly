@@ -98,7 +98,7 @@ public class MyLL {
 	{
 		Node sptr = head;
 		Node fptr = head;
-		while(fptr!=null && fptr.next!=null) //If any one null then stop
+		while(fptr.next!=null || fptr!=null)
 		{
 			fptr = fptr.next.next;
 			sptr = sptr.next;

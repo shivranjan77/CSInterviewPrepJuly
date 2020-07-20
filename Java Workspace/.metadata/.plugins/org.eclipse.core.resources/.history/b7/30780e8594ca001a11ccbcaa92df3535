@@ -78,7 +78,7 @@ public class MyLL {
 		head = head.next;
 		return head;
 	}
-	static void findMiddleOld(Node head)
+	static void findMiddle(Node head)
 	{
 		Node temp = head;
 		int count = 0;
@@ -93,17 +93,6 @@ public class MyLL {
 			temp = temp.next;
 		}
 		System.out.println(temp.data);
-	}
-	static void findMiddleNew(Node head)
-	{
-		Node sptr = head;
-		Node fptr = head;
-		while(fptr!=null && fptr.next!=null) //If any one null then stop
-		{
-			fptr = fptr.next.next;
-			sptr = sptr.next;
-		}
-		System.out.println(sptr.data);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -130,9 +119,9 @@ public class MyLL {
 		print(head);
 //		head = insertAtPos(head,8,10);// Add 7 at position 1; Handle this case yourself.
 //		print(head);
-		head = deleteFromHead(head);
-		print(head);
-		findMiddleNew(head);
+//		head = deleteFromHead(head);
+//		print(head);
+		findMiddle(head);
 	}
 
 }
