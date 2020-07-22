@@ -1,0 +1,32 @@
+package DoublyLL;
+class Node
+{
+	int data;
+	Node next;
+	Node prev;
+	Node(int data)
+	{
+		this.data = data;
+		//Prev && Next null by default
+	}
+}
+public class DoublyLL {
+	static Node insertAtHead(Node head, int data)
+	{
+		Node temp = new Node(data);
+		temp.next = head;
+		if(head!=null)
+		{
+			head.prev = temp;
+		}
+		return temp;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Node head = null;
+		head = insertAtHead(head,3);
+		head = insertAtHead(head,2);
+		head = insertAtHead(head,1);
+	}
+
+}
