@@ -150,7 +150,6 @@ public class MyLL {
 		head = deleteFromHead(head);
 		print(head);
 		findMiddleNew(head);
-		
 		head = reverse(head);
 		print(head);
 	}
