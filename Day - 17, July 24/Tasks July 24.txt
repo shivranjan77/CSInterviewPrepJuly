@@ -1,0 +1,13 @@
+H.W. 
+	A. Practice all the Class Questions
+	B. Complete all these questions on GFG & Hackerrank.
+	C. https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1
+	D. https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1
+	E. https://practice.geeksforgeeks.org/problems/parenthesis-checker/0
+	F. LinkedList implementation of Queue
+	G. Linked Lists 101
+	H. Infix to Prefix
+	I. Prefix to Postfix
+	J. Prefix Evaluation
+	K. Infix to Postfix with brackets
+	

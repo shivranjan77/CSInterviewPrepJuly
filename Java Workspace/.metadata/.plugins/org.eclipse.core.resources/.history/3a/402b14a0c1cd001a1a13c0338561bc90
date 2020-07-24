@@ -1,0 +1,31 @@
+package queue;
+class MyQueue{
+	final int size = 10;
+	int arr[] = new int[size];
+	int front = -1;
+	int rear = -1;
+	void enqueue(int data)
+	{
+		
+	}
+	int dequeue() //Remove and return the removed element
+	{
+		
+	}
+	boolean isEmpty()
+	{
+		
+	}
+	int peek()
+	{
+		
+	}
+}
+public class ArrayImp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
