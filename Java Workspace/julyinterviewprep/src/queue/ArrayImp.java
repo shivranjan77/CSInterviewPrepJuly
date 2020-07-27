@@ -71,24 +71,19 @@ public class ArrayImp {
 		System.out.println(q.dequeue());
 		System.out.println(q.peek());
 		System.out.println(q.isEmpty());
-		q.enqueue(3);
-		q.enqueue(3);
-		q.enqueue(3);
-		q.enqueue(3);
-		q.enqueue(3);
-		q.enqueue(3);
-		q.enqueue(3);
-		q.enqueue(3);
+		q.enqueue(4);
+		q.enqueue(5);
+		q.enqueue(6);
 		q.dequeue();
 		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
-		q.dequeue();
+		q.enqueue(7);
+		q.enqueue(8);
+		q.enqueue(9);
+		q.enqueue(10);
+		q.enqueue(11);
+		q.enqueue(12);
+		System.out.println(q.peek());
+		
 		}
 
 }

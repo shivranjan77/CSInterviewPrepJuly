@@ -1,0 +1,11 @@
+H.W. 
+	A. Practice all the Class Questions
+	B. Complete all these questions on GFG & Hackerrank.
+	C. Linked List implementation of Queue
+	D. geeksforgeeks.org/implement-a-stack-using-single-queue/
+	E. https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/
+	F. https://www.geeksforgeeks.org/hashset-in-java/
+	G. Complete all the hws given in class, check GitHub for this.
+	H. https://www.hackerrank.com/challenges/java-hashset/problem
+	I. https://www.hackerrank.com/challenges/phone-book/problem
+	
