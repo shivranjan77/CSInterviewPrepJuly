@@ -1,0 +1,31 @@
+package trees;
+class Node
+{
+	int data;
+	Node left;
+	Node right;
+	Node(int data)
+	{
+		this.data=data;
+	}
+}
+public class BinaryTree {
+	Node root;//Root for the Binary Tree
+	BinaryTree()
+	{
+		root=null;
+	}
+	BinaryTree(int data)
+	{
+		this.root = new Node(data);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BinaryTree bt = new BinaryTree(2);//Create a tree with 2 as the root.
+		bt.root.left=new Node(3);
+		bt.root.right=new Node(5);
+		bt.root.left.right=new Node(9);
+		bt.root.right.left = new Node(7);
+	}
+
+}
