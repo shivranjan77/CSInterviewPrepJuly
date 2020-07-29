@@ -159,10 +159,9 @@ public class BinaryTree {
 		//If successfully converted to mirror then now bt3 and bt should be equal
 		System.out.println(bt.isIdentical(bt.root, bt3.root));
 		
-		System.out.println(bt.isIdentical(bt.root, bt3.root)); //Checking if Symmetric
 		//Changing structure of bt3
 		bt3.root.right.left.right = new Node(10);
-		System.out.println(bt.isIdentical(bt.root, bt3.root)); //Checking if Symmetric
+		System.out.println(bt.isIdentical(bt.root, bt3.root));
 	}
 
 }

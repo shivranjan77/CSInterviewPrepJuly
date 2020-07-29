@@ -1,0 +1,8 @@
+H.W. 
+	A. Practice all the Class Questions
+	B. Complete all these questions on GFG & Hackerrank.
+	C. Complete all Pending Tasks
+	D. https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1
+	E. https://practice.geeksforgeeks.org/problems/sum-of-binary-tree/1
+	F. https://practice.geeksforgeeks.org/problems/count-leaves-in-binary-tree/1
+	
