@@ -1,5 +1,4 @@
 package trees;
-import java.util.*;
 class Node
 {
 	int data;
@@ -109,7 +108,7 @@ public class BinaryTree {
 		return isSymmetric(root1.left,root2.left) 
 				&& isSymmetric(root1.right,root2.right); 
 	}
-	void bfsRec(Node root) //Not that efficient
+	void bfsRec(Node root)
 	{
 //		int height = height(root);
 //		int levels = height+1;
@@ -120,26 +119,6 @@ public class BinaryTree {
 			printAtLevel(root, i);
 			System.out.println();
 		}
-	}
-	void bfsIterative(Node root)
-	{
-		if(root==null) return;
-		Queue<Node> q = new LinkedList<>();
-		q.add(root); //Necessary to add the root first
-		while(!q.isEmpty())
-		{
-			Node temp = q.poll();
-			System.out.print(temp.data+" ");
-			if(temp.left!=null)
-			{
-				q.add(temp.left);
-			}
-			if(temp.right!=null)
-			{
-				q.add(temp.right);
-			}
-		}
-		System.out.println();
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -196,9 +175,6 @@ public class BinaryTree {
 		//Changing structure of bt3
 		bt3.root.right.left.right = new Node(10);
 		System.out.println(bt.isIdentical(bt.root, bt3.root)); //Checking if Symmetric
-		
-		bt.bfsRec(bt.root);
-		bt.bfsIterative(bt.root);
 	}
 
 }

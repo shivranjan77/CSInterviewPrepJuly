@@ -130,16 +130,9 @@ public class BinaryTree {
 		{
 			Node temp = q.poll();
 			System.out.print(temp.data+" ");
-			if(temp.left!=null)
-			{
-				q.add(temp.left);
-			}
-			if(temp.right!=null)
-			{
-				q.add(temp.right);
-			}
+			q.add(temp.left);
+			q.add(temp.right);
 		}
-		System.out.println();
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
