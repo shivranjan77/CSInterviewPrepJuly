@@ -231,8 +231,7 @@ public class BinaryTree {
 		System.out.println(bt.findLCA(bt.root, 5, 7).data);
 		System.out.println(bt.findLCA(bt.root, 2, 9).data);
 		bt.leftView(bt.root, 0);
-		System.out.println();
-		bt.levelToBePrinted = 0; //Needs to be re-initialized
+		bt.levelToBePrinted = 0;
 		bt.leftView(bt.root, 0);
 		
 	}

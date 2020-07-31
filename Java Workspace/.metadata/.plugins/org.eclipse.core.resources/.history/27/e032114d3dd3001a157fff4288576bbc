@@ -154,21 +154,10 @@ public class BinaryTree {
 		{
 			return root;
 		}
-		if(leftLCA!=null) return leftLCA; //agar sirf left se aya to vahi answer hai
-		return rightLCA; //agar sirf right se aya to vahi answer hai
+		if(leftLCA!=null) return leftLCA;
+		return rightLCA;
 	}
-	int levelToBePrinted = 0; //Single value for all function calls
-	void leftView(Node root,int level)
-	{
-		if(root==null) return;
-		if(level==levelToBePrinted)
-		{
-			System.out.print(root.data+" ");
-			levelToBePrinted++;
-		}
-		leftView(root.left,level+1); //Same level for the children (level+1)
-		leftView(root.right, level+1);
-	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BinaryTree bt = new BinaryTree(2);//Create a tree with 2 as the root.
@@ -230,11 +219,6 @@ public class BinaryTree {
 		System.out.println(bt.findLCA(bt.root, 3, 2).data);
 		System.out.println(bt.findLCA(bt.root, 5, 7).data);
 		System.out.println(bt.findLCA(bt.root, 2, 9).data);
-		bt.leftView(bt.root, 0);
-		System.out.println();
-		bt.levelToBePrinted = 0; //Needs to be re-initialized
-		bt.leftView(bt.root, 0);
-		
 	}
 
 }

@@ -88,16 +88,16 @@ public class BST {
 		postorder(root.right); //go to Right Sub Tree
 		System.out.print(root.data+" "); //Value
 	}
-	int getMin(BSTNode root) //Left Most Value
+	void getMin(BSTNode root)
 	{
-		if(root==null) return -1;
+		if(root==null) return;
 		while(root.left!=null)
 		{
 			root=root.left;
 		}
-		return root.data;
+		System.out.println("Minimum in BST: "+root.data);
 	}
-	int getMax(BSTNode root) //Right Most Value
+	int getMax(BSTNode root)
 	{
 		if(root==null) return-1;
 		while(root.right!=null)
@@ -105,47 +105,6 @@ public class BST {
 			root=root.right;
 		}
 		return root.data;
-	}
-	BSTNode delete(BSTNode root, int data)
-	{
-		if(root==null) return null;
-		if(data<root.data)
-		{
-			root.left = delete(root.left,data); //Left  side se delete kro aur left side ko update krdo
-		}
-		else if(data>root.data)
-		{
-			root.right = delete(root.right,data); //Right side se delete kro aur Right side ko update krdo
-		}
-		else{
-			//We have found the node to be deleted
-			if(root.left == null) //1Child Case && No Child Case
-			{
-				return root.right;
-			}
-			if(root.right == null)
-			{
-				return root.left;
-			}
-			//2 Child Case
-			root.data = getMin(root.right);
-			root.right = delete(root.right,root.data);
-		}
-		return root;
-	}
-	BSTNode lcaBST(BSTNode root, int n1,int n2)
-	{
-		if(root==null) return null;
-		if(n1<root.data && n2<root.data)
-		{
-			return lcaBST(root.left,n1,n2);
-		}
-		if(n1>root.data && n2>root.data)
-		{
-			return lcaBST(root.right,n1,n2);
-		}
-		//left is the case of being equal to n1 or n2 or one being on left side and the other being on right side, in that case root will be LCA
-		return root;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -166,11 +125,6 @@ public class BST {
 		System.out.println();
 		bst.getMin(bst.root);
 		System.out.println("Maximum in BST: "+bst.getMax(bst.root));
-		bst.root = bst.delete(bst.root, 15);
-		System.out.println(bst.root.data);
-		System.out.println(bst.root.left.data);
-		System.out.println(bst.lcaBST(bst.root, 10, 17).data);
-		
 	}
 
 }

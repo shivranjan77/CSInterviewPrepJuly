@@ -141,34 +141,6 @@ public class BinaryTree {
 		}
 		System.out.println();
 	}
-	Node findLCA(Node root, int n1,int n2)
-	{
-		if(root==null) return null;
-		if(root.data==n1 || root.data==n2) return root;
-		
-		//If one node lies on left side and the other lies on right side then current root is LCA
-		
-		Node leftLCA = findLCA(root.left,n1,n2);
-		Node rightLCA = findLCA(root.right,n1,n2);
-		if(leftLCA!=null && rightLCA!=null) 
-		{
-			return root;
-		}
-		if(leftLCA!=null) return leftLCA; //agar sirf left se aya to vahi answer hai
-		return rightLCA; //agar sirf right se aya to vahi answer hai
-	}
-	int levelToBePrinted = 0; //Single value for all function calls
-	void leftView(Node root,int level)
-	{
-		if(root==null) return;
-		if(level==levelToBePrinted)
-		{
-			System.out.print(root.data+" ");
-			levelToBePrinted++;
-		}
-		leftView(root.left,level+1); //Same level for the children (level+1)
-		leftView(root.right, level+1);
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BinaryTree bt = new BinaryTree(2);//Create a tree with 2 as the root.
@@ -227,14 +199,6 @@ public class BinaryTree {
 		
 		bt.bfsRec(bt.root);
 		bt.bfsIterative(bt.root);
-		System.out.println(bt.findLCA(bt.root, 3, 2).data);
-		System.out.println(bt.findLCA(bt.root, 5, 7).data);
-		System.out.println(bt.findLCA(bt.root, 2, 9).data);
-		bt.leftView(bt.root, 0);
-		System.out.println();
-		bt.levelToBePrinted = 0; //Needs to be re-initialized
-		bt.leftView(bt.root, 0);
-		
 	}
 
 }
