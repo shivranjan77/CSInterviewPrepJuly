@@ -209,7 +209,6 @@ public class BinaryTree {
 		}
 		System.out.println();
 	}
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BinaryTree bt = new BinaryTree(2);//Create a tree with 2 as the root.

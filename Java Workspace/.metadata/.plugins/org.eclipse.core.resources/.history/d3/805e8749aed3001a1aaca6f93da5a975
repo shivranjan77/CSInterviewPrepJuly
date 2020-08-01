@@ -182,7 +182,7 @@ public class BinaryTree {
 			}
 		}
 		Queue<Pair> q = new LinkedList<>(); //Humaara queue pair type ki cheezen store karega
-		TreeMap<Integer,Node> map = new TreeMap<>(); //<Distance,Node> - TreeMap to store sorted by keys
+		TreeMap<Integer,Node> map = new TreeMap<>(); //<Distance,Node> - Treemap to store sorted by keys
 		q.add(new Pair(root,0)); //Adding root with its horizontal distance
 		while(!q.isEmpty())
 		{
@@ -209,7 +209,6 @@ public class BinaryTree {
 		}
 		System.out.println();
 	}
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BinaryTree bt = new BinaryTree(2);//Create a tree with 2 as the root.
