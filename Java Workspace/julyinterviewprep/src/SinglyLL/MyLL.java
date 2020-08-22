@@ -6,7 +6,7 @@ class Node{
 	Node(int data)
 	{
 		this.data = data;
-		this.next = null;
+		//this.next = null;
 	}
 }
 public class MyLL {
